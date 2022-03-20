@@ -1,0 +1,415 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color:  white;
+	background-color: black;
+	font-size: small;
+	margin: 0;
+	max-width: 800;
+	min-width: 320;
+}
+
+header {
+	padding: 20px 0;
+	width: 100%;
+	background-color: rgb(34, 34, 34);
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li {
+	list-style: none;
+	display: inline;
+	margin: 0;
+	padding: 0px 40px 0px 0px;
+}
+
+.menu li:hover {
+	color: #ffc709;
+	cursor: pointer;
+}
+
+img {
+	margin-left: 5%;
+}
+
+img:hover{
+	cursor: pointer;
+}
+
+.menu li::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	bottom: 92%;
+	height: 3px;
+	background-color: #ffc709;
+	transition: width .5s cubic-bezier(.165, .84, .44, 1);
+}
+
+.menu li:hover::before {
+	width: calc(5% - 5px)
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+	color:  #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1vh;
+}
+
+header {
+	display: block;
+	background-color: rgb(34, 34, 34);
+	color: #fff;
+	width: 100%;
+	padding: 20px 0;
+	font-size: 2.5vh;
+}
+
+nav {
+	display: flex;
+	font-size: smaller;
+	width: 100%;
+}
+
+.list-menu li {
+	list-style: none;
+	display: inline-block;
+	padding: 3vh 2vh 1vh 2vh;
+	cursor: pointer;
+}
+
+.list-menu li:hover {
+	color: #ffc709;
+}
+
+.list-menu li::after {
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 5px;
+	border: 2px solid #ffc709;
+	border-top: 0;
+	border-top-width: 0px;
+	border-top-style: initial;
+	border-top-color: initial;
+	border-left: 0;
+	border-left-width: 0px;
+	border-left-style: initial;
+	border-left-color: initial;
+	transform: rotate(-45deg);
+	cursor: pointer;
+	margin: 3px 7px 0px;
+}
+
+.list-menu li:hover::after {
+	transform: rotate(45deg);
+	transition: all 0.5s;
+}
+
+.list-menu li::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	bottom: 91%;
+	height: 3px;
+	background-color: #ffc709;
+	transition: width .5s cubic-bezier(.165, .84, .44, 1);
+}
+
+.list-menu li:hover::before {
+	width: 7vh;
+}
+
+.logo {
+	display: inline-block;
+	margin-left: 10vh;
+	cursor: pointer;
+}
+
+.button-menu {
+	margin-left: 15vh;
+	height: 7vh;
+	width: 22vh;
+	cursor: pointer;
+	border: 2px solid #fff;
+	background: black;
+	color: #fff;
+	font-size: small;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.button-menu:hover {
+	border-color: #ffc709;
+	background: #ffc709;
+	color: black;
+	transition: background .5s cubic-bezier(.165, .84, .44, 1), border-color .5s cubic-bezier(.165, .84, .44, 1);	
+}
+
+.acesso-menu {
+	padding: 3vh 2vh 1vh 1vh;
+	cursor: pointer;
+}
+
+.acesso-menu::before {
+	position: absolute;
+	content: "";
+	width: 16vh;
+	bottom: 91.5%;
+	height: 1px;
+	background-color: #ffc709;
+	transition: width .5s cubic-bezier(.165, .84, .44, 1);
+}
+
+.acesso-menu:hover::before {
+	height: 3px;
+}
+
+.titulo {
+	margin-top: 15vh;
+	font-size: 5vh;
+	color: #ffc709;
+	font-family: Trebuchet MS, sans-serif;
+	letter-spacing: .3vh;
+}
+
+.subtitulo {
+	margin-top: 10vh;
+	font-size: 3vh;
+	font-family: Trebuchet MS, sans-serif;
+	letter-spacing: .2vh;
+}
+
+.button-body {
+	margin-top: 10vh;
+	height: 7vh;
+	width: 22vh;
+	cursor: pointer;
+	border: 2px solid #ffc709;
+	background: #ffc709;
+	color: black;
+	font-size: small;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.contexto {
+	margin-top: 5vh;
+	max-width: 80vh;
+	font-size: 2vh;
+}
+
+.condicoes {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.grid-on-1 {
+	position: flex;
+	margin-left: 7vh;
+	max-width: 100vh;
+}
+
+.grid-on-2 {
+	position: flex;
+	max-width: 200vh;
+}
+
+.simulator-xp {
+	display: inline-block;
+	background-color: rgb(34, 34, 34);
+	float: right;
+	height: 15vh;
+	width: 50vh;
+	display: inline-block;
+	border: 1px solid rgb(34, 34, 34);
+	border-radius: 1vh;
+	margin-top: -35vh;
+	margin-right: 30vh;
+	cursor: pointer;
+}
+
+.simulator-xp:hover {
+	color: black;
+	background-color: #fff;
+}
+
+.grid-on-2 img {
+	margin-left: auto;
+	border-top-left-radius: .5vh;
+	border-bottom-left-radius: .5vh;
+}
+
+.simulator-xp h1 {
+	display: flex;
+	margin-top: -12vh;
+	margin-left: 15vh;
+	max-width: 50vh;
+}
+
+.simulator-xp h2 {
+	display: flex;
+	margin-top: 2vh;
+	margin-left: 15vh;
+	max-width: 50vh;
+	font-size: 160%;
+}
+
+.simulator-xp h2::after {
+	content: "➝";
+	margin-top: -0.8vh;
+	margin-left: 1vh;
+	font-size: 160%;
+	color: rgb(224, 173, 0);
+}
+
+.benefits-xp {
+	background-color: rgb(34, 34, 34);
+	float: right;
+	height: 15vh;
+	width: 50vh;
+	display: inline-block;
+	border: 1px solid rgb(34, 34, 34);
+	border-radius: 1vh;
+	margin-top: -15vh;
+	margin-right: 30vh;
+	cursor: pointer;
+}
+
+.benefits-xp:hover {
+	color: black;
+	background-color: #fff;
+}
+
+.benefits-xp h1 {
+	display: flex;
+	margin-top: -12vh;
+	margin-left: 12vh;
+	max-width: 50vh;
+}
+
+.benefits-xp h2 {
+	display: flex;
+	margin-top: 2vh;
+	margin-left: 12vh;
+	max-width: 50vh;
+	font-size: 160%;
+}
+
+.benefits-xp h2::after {
+	content: "➝";
+	margin-top: -0.8vh;
+	margin-left: 1vh;
+	font-size: 160%;
+	color: rgb(224, 173, 0);
+}
+
+@media (max-width: 1280px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	main {
+		margin-left: auto;
+	}
+
+	.list-menu {
+		position: absolute;
+		flex-direction: column;
+		top: 11%;
+		right: 0;
+		width: 50vw;
+		height: 55vh;
+		align-items: flex-start;
+		background-color: rgb(34, 34, 34);
+		justify-content: space-around;
+	}
+
+	.list-menu li {
+		display: block;
+		margin-left: 0;
+		margin-bottom: 2vh;
+	}
+
+	.list-menu li::after {
+		display: inline-flex;
+		right: 2vh;
+	}
+
+	.responsive {
+		display: inline-flex;
+		margin-left: auto;
+		background-color: rgb(34, 34, 34);
+		float: none;
+		width: 80vh;
+	}
+
+	.logo {
+		display: inline-block;
+		margin-left: 3vh;
+	}
+
+	.list-menu li::before {
+		display: none;
+	}
+
+	.button-menu {
+		display: inline-block;
+		margin-left: 5vh;
+		width: 30%;
+	}
+
+	.acesso-menu {
+		display: inline-block;
+		margin-left: 5vh;
+		border-bottom: 2px solid #ffc709;
+	}
+
+	.acesso-menu::before {
+		display: none;
+	}
+
+	.grid-on-1 {
+		display: block;
+		margin-left: 5vh;
+	}
+
+	.cut-screen-menu {
+		max-width: 40vw;
+	}
+
+	.grid-on-2 {
+		display: block;
+	}
+
+	.simulator-xp {
+		display: block;
+		float: none;
+		margin-top: 5vh;
+		margin-right: 0;
+		margin-left: 5vh;
+		width: 40vh;
+	}
+
+	.benefits-xp {
+		display: block;
+		float: none;
+		margin-top: 7vh;
+		margin-right: 0;
+		margin-bottom: 5vh;
+		margin-left: 5vh;
+		width: 40vh;
+	}
+}
+.menu a:hover::before {
+	width: 103px;
+	height: 2px;
+}
