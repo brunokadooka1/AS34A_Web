@@ -379,6 +379,10 @@ main {
 	}
 
 	.grid-on-1 {
+		max-width: 90%;
+	}
+
+	.grid-on-1 p {
 		max-width: 100%;
 	}
 
