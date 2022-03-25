@@ -379,13 +379,9 @@ main {
 	}
 
 	.grid-on-1 {
-		max-width: 88%;
+		max-width: 100%;
 	}
-
-	.grid-on-1 p {
-		max-width: 91.5%;
-	}
-
+	
 	.grid-on-2 {
 		position: absolute;
 		display: block;
