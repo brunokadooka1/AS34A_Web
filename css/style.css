@@ -420,5 +420,22 @@ main {
 @media screen and (max-width: 500px) {
 	.interacao-usuario button {
 		width: 80%;
+
+	}
+	
+	.grid-on-1 {
+		margin-left: 10%;
+	}
+	
+	.grid-on-2 {
+		margin-left: 10%;
+	}
+
+	.grid-on-2 .segundo-quadro p {
+		max-width: 80%;
+	}
+
+	.grid-on-1 button {
+		width: 80%;
 	}
 }
