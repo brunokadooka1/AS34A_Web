@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css\styleLogin.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='css\styleLogado.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css\style.css'>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src='script.js' defer></script>
 	<link rel="icon" href="img/logo-xp-preto.png">
 	<title>XP Investimentos: transformando o mercado financeiro</title>
 </head>
@@ -14,7 +19,7 @@
 				<div class="logo-menu">
 					<img src="img/logo-xp-branco.png" alt="Logo da XP Investimentos" height="70vh"  width="60vw">
 				</div>
-				<div class="menu">
+				<div class="menu showTrue" id="menu-principal">
 					<ul class="menu-site-normal">
 						<li>SOBRE A XP</li>
 						<li>COMECE A INVESTIR</li>
@@ -24,20 +29,28 @@
 						<li>EMPRESAS</li>
 					</ul>
 				</div>
-				<div class="interacao-usuario">
-					<button type="button" class="abra-sua-conta">ABRA SUA CONTA</button>
-					<a class="acesse-sua-conta">Acesse sua conta</a>
+				<div class="interacao-usuario showTrue" id="menu-interacao">
+					<button type="button" class="abra-sua-conta" id="btAbraConta">ABRA SUA CONTA</button>
+					<a class="acesse-sua-conta" id="txtAcesseConta">Acesse sua conta</a>
 					<div class="menu-mobile">
 						<div class="line-1"></div>
 						<div class="line-2"></div>
 						<div class="line-3"></div>
 					</div>
 				</div>
+                <div class="voltar-menu-principal showFalse" id="txtVoltar">
+                    <a class="layout-padrao-txt">VOLTAR AO SITE</a>
+                </div>
+				<div class="tela-logado showFalse" id="tela-logado">
+					<a class="centraliza-menu" id="lblBoasVindas">login: user@reqres.in...</a>
+					<img src="./img/log-out.png" height="40px" width="40px" 
+					alt="Log-Out do Sistema" class="logo-logout" id="btLogout"/>
+				</div>
 			</div>
 		</nav>
 	</header>
 	<main>
-		<div class="container-body">
+		<div class="container-body showTrue" id="tela-principal">
 			<div class="grid-on-1">
 				<div>
 					<h1>CDB 200% do CDI voltou</h1>
@@ -62,12 +75,8 @@
 						<img src="img/cards-desk-Simulador.jpg" height="110px" width="110px">
 					</div>
 					<div>
-						<p>
-							Descubra grátis quanto seu dinheiro pode render na XP
-						</p>
-						<p class="nota">
-							Simule agora
-						</p>
+						<p>Descubra grátis quanto seu dinheiro pode render na XP</p>
+						<p class="nota">Simule agora</p>
 					</div>
 				</div>
 				<div class="segundo-quadro">
@@ -75,17 +84,41 @@
 						<img src="img/75-x-103-copiar-2.jpg" height="110px">
 					</div>
 					<div>
-						<p>
-							Conheça os principais benefícios em ser cliente XP
-						</p>
-						<p class="nota">
-							Confira
-						</p>
+						<p>Conheça os principais benefícios em ser cliente XP</p>
+						<p class="nota">Confira</p>
 					</div>
 				</div>
 			</div>
 		</div>
+        <div class="fundo-login showFalse" id="tela-login"> 
+            <div class="container-login">
+                <div class="tela-login">
+                    <h1 class="titulo">Login</h1>
+                    <div class="usuario">
+                        <h2>Email do usuário:</h2>
+                        <input type="text" class="caixa-entrada" id="txtUsuario"/>
+                    </div>
+                    <div class="senha">
+                        <h2>Senha:</h2>
+                        <input type="password" class="caixa-entrada" id="txtSenha"/>
+                    </div>
+                    <div class="container-comandos">
+                        <button class="entra" id="btLogin">ENTRAR</button>
+                        <div class="container-cliente">
+                            <h3>Esqueceu usuário ou senha?</h3>
+                            <h4 class="nao-cliente">Ainda não sou cliente XP</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="fundo-logado showFalse" id="fundo-logado">
+			<form class="form-busca">
+				<input type="text" class="text-busca layout-text-default" id="txtBusca" 
+				value="AAPL"/>
+				<button class="layout-button-xp" id="btBuscar">Buscar</button>
+			</form>	
 		</div>
-	</main>
+    </main>
 </body>
 </html>

@@ -1,0 +1,131 @@
+.fundo-login {
+    padding: 30px 0px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.container-login {
+    position: relative;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.tela-login {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+}
+
+.tela-login h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 5px;
+}
+
+.tela-login h2 {
+    font-size: 0.9rem;
+    padding: 5px;
+    letter-spacing: 1px;
+    margin-top: 5%;
+}
+
+.tela-login input {
+    font-size: 1.1rem;
+    padding: 5px;
+    height: 20px;
+    width: 95%;
+    border: 0;
+    border-bottom: 2px solid #000;
+    outline: 0;
+    text-align: center;
+}
+
+.senha {
+    margin-top: 20px;
+}
+
+.container-comandos {
+    margin-top: 10%;
+}
+
+.container-comandos button {
+    height: 50px;
+    width: 97%;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border: 0;
+}
+
+.container-cliente {
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.container-cliente h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container-cliente h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container-cliente h3::before {
+	position: absolute;
+	content: "";
+	min-width: 6.3rem;
+    width: 40%;
+	bottom: 8%;
+	height: 2px;
+	background-color: #ffc709;
+}
+
+.nao-cliente {
+    margin-left: 58%;
+    margin-top: -4%;
+}
+
+.container-cliente h4::before {
+	position: absolute;
+	content: "";
+	min-width: 6.3rem;
+    width: 35%;
+	bottom: 8%;
+	height: 2px;
+	background-color: #ffc709;
+	
+}
+
+.container-cliente h3:hover::before {
+    height: 3px;
+    transition: height .3s cubic-bezier(.165, .84, .44, 1);
+}
+
+.container-cliente h4:hover::before {
+    height: 3px;
+    transition: height .3s cubic-bezier(.165, .84, .44, 1);
+}
+
+.layout-button-xp {
+    background-color: #ffc709;
+    cursor: pointer;
+}
+
+.layout-button-xp:hover {
+    background-color: rgba(255, 199, 9, 0.6);
+}
